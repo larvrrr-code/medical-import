@@ -1,0 +1,165 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Medical Import Color Palette */
+  --background: #FFFFFF;
+  --foreground: #141E61;
+  --card: #FFFFFF;
+  --card-foreground: #141E61;
+  --popover: #FFFFFF;
+  --popover-foreground: #141E61;
+  --primary: #141E61;
+  --primary-foreground: #FFFFFF;
+  --secondary: #CBE9FF;
+  --secondary-foreground: #141E61;
+  --muted: #EEEEEE;
+  --muted-foreground: #666666;
+  --accent: #132EEF;
+  --accent-foreground: #FFFFFF;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: #EEEEEE;
+  --input: #EEEEEE;
+  --ring: #132EEF;
+  --radius: 0.5rem;
+  
+  /* Custom colors */
+  --navy: #141E61;
+  --electric-blue: #132EEF;
+  --light-blue: #CBE9FF;
+  --gray: #EEEEEE;
+}
+
+@theme inline {
+  --font-sans: var(--font-league-spartan), 'League Spartan', sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Custom color tokens */
+  --color-navy: var(--navy);
+  --color-electric-blue: var(--electric-blue);
+  --color-light-blue: var(--light-blue);
+  --color-gray: var(--gray);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .client-carousel-mask {
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .client-carousel-track {
+    display: flex;
+    width: max-content;
+    animation: client-marquee 28s linear infinite;
+    will-change: transform;
+  }
+
+  .client-carousel-mask:hover .client-carousel-track {
+    animation-play-state: paused;
+  }
+
+  .testimonial-column-mask {
+    min-height: 100%;
+    overflow: visible;
+  }
+
+  .testimonial-column-track {
+    animation-name: testimonial-scroll-up;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+  }
+
+  .accessory-wave-card {
+    animation: accessory-wave 4.8s ease-in-out infinite;
+    will-change: transform;
+  }
+}
+
+@keyframes client-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes testimonial-scroll-up {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes accessory-wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  38% {
+    transform: translateY(-7px);
+  }
+
+  62% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accessory-wave-card {
+    animation: none;
+  }
+}
