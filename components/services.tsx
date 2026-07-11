@@ -6,25 +6,25 @@ const services = [
   {
     title: "Equipos Médicos",
     description: "Venta e importación de equipamiento de alta tecnología para hospitales e instituciones.",
-    image: { src: "/Arco%20en%20C.png", alt: "Equipo de imagenología" },
+    image: { src: "/adquisición-equipo.png", alt: "Adquisición de equipo médico" },
     href: "/equipos",
   },
   {
     title: "Renta Hospitalaria",
     description: "Soluciones flexibles de renta para cubrir necesidades temporales o permanentes.",
-    image: { src: "/Cama%20Hospitalaria.png", alt: "Cama hospitalaria eléctrica" },
+    image: { src: "/Instalaciones-puesta-en-marcha.png", alt: "Quirófano equipado y en funcionamiento" },
     href: "/rentas",
   },
   {
     title: "Mantenimiento",
     description: "Servicio técnico preventivo y correctivo con pólizas para todo tipo de equipo médico.",
-    image: { src: "/Ximena.png", alt: "Técnico de mantenimiento" },
+    image: { src: "/Instalaciones-especiales.png", alt: "Instalaciones técnicas hospitalarias" },
     href: "/mantenimiento",
   },
   {
     title: "Obra Civil",
     description: "Diseño y construcción de espacios hospitalarios especializados llave en mano.",
-    image: { src: "/proyecto-arquitectonico.png", alt: "Obra civil hospitalaria" },
+    image: { src: "/supervisión-obra.png", alt: "Supervisión de obra hospitalaria" },
     href: "/obra-civil",
   },
 ]
