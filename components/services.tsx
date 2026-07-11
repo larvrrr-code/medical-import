@@ -24,7 +24,7 @@ const services = [
   {
     title: "Obra Civil",
     description: "Diseño y construcción de espacios hospitalarios especializados llave en mano.",
-    image: { src: "/hero-technician.jpg", alt: "Obra civil hospitalaria" },
+    image: { src: "/proyecto-arquitectonico.png", alt: "Obra civil hospitalaria" },
     href: "/obra-civil",
   },
 ]

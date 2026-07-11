@@ -97,7 +97,7 @@ export default function NosotrosPage() {
             <div className="aspect-[3/4] overflow-hidden rounded-lg">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/nosotros-tecnica-lampara.jpg"
+                src="/nosotros-tecnica-lampara.JPG"
                 alt="Técnica con lámpara"
                 className="h-full w-full object-cover"
               />
@@ -105,7 +105,7 @@ export default function NosotrosPage() {
             <div className="aspect-[3/4] overflow-hidden rounded-lg">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/nosotros-quirofano-equipado.jpg"
+                src="/nosotros-quirofano-equipado.JPG"
                 alt="Quirófano equipado"
                 className="h-full w-full object-cover"
               />
@@ -117,7 +117,7 @@ export default function NosotrosPage() {
             <div className="h-[300px] w-[360px] shrink-0 -translate-y-[72px] overflow-hidden rounded-lg">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/nosotros-tecnica-lampara.jpg"
+                src="/nosotros-tecnica-lampara.JPG"
                 alt="Técnica con lámpara"
                 className="h-full w-full object-cover transition-transform duration-500 ease-out hover:scale-105"
               />
@@ -133,7 +133,7 @@ export default function NosotrosPage() {
             <div className="aspect-[3/2] w-[430px] shrink-0 -translate-y-36 overflow-hidden rounded-lg">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/nosotros-quirofano-equipado.jpg"
+                src="/nosotros-quirofano-equipado.JPG"
                 alt="Quirófano equipado"
                 className="h-full w-full object-cover transition-transform duration-500 ease-out hover:scale-105"
               />

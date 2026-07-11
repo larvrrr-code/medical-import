@@ -1,9 +1,9 @@
 const logos = [
-  { src: "/cofepris.png", alt: "COFEPRIS" },
-  { src: "/fda.png", alt: "FDA" },
-  { src: "/nom.png", alt: "NOM" },
-  { src: "/nfpa.png", alt: "NFPA" },
-  { src: "/iso.png", alt: "ISO" },
+  { src: "/COFEPRIS.png", alt: "COFEPRIS" },
+  { src: "/FDA.png", alt: "FDA" },
+  { src: "/NOM.png", alt: "NOM" },
+  { src: "/NFPA.png", alt: "NFPA" },
+  { src: "/ISO.png", alt: "ISO" },
   { src: "/salubridad.png", alt: "Salubridad" },
 ]
 
