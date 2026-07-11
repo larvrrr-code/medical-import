@@ -39,6 +39,7 @@ const servicios = [
   },
   {
     title: "Permisos Sanitarios COFEPRIS",
+    image: "/permisos-sanitarios.png",
     desc: "Gestionamos toda la tramitología para obtener el permiso sanitario de construcción ante COFEPRIS.",
     bullets: [
       "Solicitud de inicio de trámite",
