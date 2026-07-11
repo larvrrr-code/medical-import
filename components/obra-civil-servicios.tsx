@@ -28,6 +28,7 @@ const servicios = [
   },
   {
     title: "Proyecto Ejecutivo e Instalaciones Especiales",
+    image: "/Instalaciones-especiales.png",
     desc: "Nuestra especialidad. Las instalaciones técnicas hospitalarias que los arquitectos convencionales suelen hacer mal.",
     bullets: [
       "Gases medicinales",
@@ -70,6 +71,7 @@ const servicios = [
   },
   {
     title: "Instalaciones y Puesta en Marcha",
+    image: "/Instalaciones-puesta-en-marcha.png",
     desc: "Instalamos el equipamiento médico y dejamos el hospital funcionando desde el primer día.",
     bullets: [
       "Instalación de equipos por área",
