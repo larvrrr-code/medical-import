@@ -83,6 +83,7 @@ const servicios = [
   },
   {
     title: "Licencias de Funcionamiento COFEPRIS",
+    image: "/licencias-funcionamiento.png",
     desc: "Gestionamos las licencias de funcionamiento para que tu establecimiento opere dentro del marco legal federal.",
     bullets: [
       "Trámite completo ante COFEPRIS",
