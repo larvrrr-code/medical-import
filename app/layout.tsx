@@ -15,21 +15,8 @@ export const metadata: Metadata = {
   description: 'Más de 23 años equipando la medicina mexicana. Proveedor de equipos médicos para IMSS, ISSSTE y Secretaría de Salud.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/Logo_simplificado.png',
+    apple: '/Logo_simplificado.png',
   },
 }
 
