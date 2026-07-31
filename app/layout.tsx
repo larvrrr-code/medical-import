@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { League_Spartan } from 'next/font/google'
+import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
 import { WhatsappButton } from '@/components/whatsapp-button'
 import './globals.css'
@@ -30,6 +31,22 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === 'production' && (
+          <>
+            <Script
+              src="https://www.googletagmanager.com/gtag/js?id=AW-596698618"
+              strategy="afterInteractive"
+            />
+            <Script id="google-ads-gtag" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-596698618');
+              `}
+            </Script>
+          </>
+        )}
 
         <WhatsappButton />
       </body>
